@@ -1,0 +1,168 @@
+body {
+  margin: 0 auto;
+  text-align: middle;
+  background-attachment: fixed;
+  /* background-image: url('vector.jpg'); */
+  background: linear-gradient(rgb(149, 185, 240), #f1d4f1);
+  background-size: contain;
+  background-position-x: 10em;
+  animation: background-image linear 800s infinite forwards;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* 
+@keyframes background-image {
+  from {
+    background-position-x: 0vw;
+  }
+  to {
+    background-position-x: 1500vw;
+  }
+} */
+
+#container {
+  padding: 2em 15px;
+  /* width: 82%; */
+  /* margin: 0 auto; */
+}
+
+p {
+  text-align: justify;
+}
+
+div {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #314c80e7;
+  display: flex;
+  z-index: 1000;
+  box-shadow: 0px 2px 11px black;
+}
+
+.subtitle {
+  font-family: 'K2D', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  float: left;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  padding: 1em 0;
+}
+
+.link:hover {
+  background-color: #00000025;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+#container .card {
+  color: white !important;
+  margin: 2em 0 0;
+}
+
+.card-header-title {
+  color: white;
+}
+
+.profile_header {
+  background-color: #681985e7;
+  padding: 1px;
+  margin-top: 3em;
+}
+
+.aboutMe {
+  background-color: #3c413dee;
+}
+
+.aboutMeContent {
+  display: flex;
+}
+
+#selfie {
+  width: 40%;
+  height: 100%;
+}
+
+#aboutMeText {
+  flex-grow: 1;
+  margin: 0 1em;
+}
+
+
+@media screen and (max-width: 700px) {
+  #selfie {
+    width: 100%;
+  }
+
+  .aboutMeContent {
+    display: block;
+  }
+
+  #aboutMeText {
+    margin: 0;
+  }
+}
+
+.mijnTalenten {
+  background-color: #4e524fee;
+  /* padding: 20px; */
+}
+
+.watLeren {
+  background-color: #3c413dee;
+  color: #000000;
+  /* padding: 20px; */
+}
+
+.mijnDoel {
+  background-color: #4e524fee;
+  color: #000000;
+  /* padding: 20px; */
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+.projecs_header {
+  background-color: #681985e7;
+  padding: 2px;
+}
+
+.isaac {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#isaac_gif {
+  width: 100%;
+}
+
+.dungeon {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#dungeonGenerator {
+  width: 100%;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+.contact_header {
+  background-color: #681985e7;
+  padding: 2px;
+}
+
+.contactList {
+  background-color: #3c413dee;
+  padding: 2px;
+}
