@@ -16,31 +16,73 @@
         <span class="link" id="nav_contact">Contact</span>
     </nav>
 
+    <header class="fullscreen-header">
+        <div class="text-vertical-center">
+            <div width="100%">
+                <div class="is-size-1">Volken Koelewijn</div>
+                <div class="is-size-3">Game developer</div>
+            </div>
+        </div>
+    </header>
+
     <br>
 
     <div id="container" class="container">
 
         <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
+
         <div class="profile_header card" id="profile">
             <h1 class="subtitle is-3 has-text-white has-text-centered">Profiel</h1>
         </div>
-        <div class="card aboutMe">
-            <div class="card-content aboutMeContent">
-                <img src="v.jpg" id="selfie">
-                <div id="aboutMeText">
-                    <h3>Over mij.</h3>
-                    <p>
+
+        <div class="columns">
+
+            <div class="column is-one-third-desktop">
+                <div class="card aboutMe">
+                    <div class="card-content aboutMeContent">
+                        <img src="v.jpg" id="selfie">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="mijnTalenten card">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Over mij.
+                        </p>
+                    </div>
+                    <div class="card-content">
                         Mijn naam is
                         <i>Volken Koelewijn</i>, ik ben geboren op 13 September 1999.
                         <br> Ik woon in Uithoorn en ik volg momenteel een opleiding voor
                         <i>Game Developer</i> op het Mediacollege Amsterdam.
                         <br>
-                        <br> Mijn hobby's zijn gamen, tekenen, over games praten en het verzamelen van games. Verder ben ik vrolijk en heb ik een
+                        <br> Mijn hobby's zijn gamen, tekenen, over games praten en het verzamelen van games. Verder
+                        ben ik vrolijk en heb ik een
                         goed gevoel voor humor.
-                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="mijnDoel card">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Mijn Doel!
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        Mijn doel is dat ik uiteindelijk een eigen bedrijf kan beginnen en mijn eigen opdrachtgever en
+                        Game Designer kan zijn,
+                        <br>Zodat ik mijn eigen ideeën en visie om kan zetten in games die ik maak.
+                    </div>
                 </div>
             </div>
         </div>
+
+
 
         <div class="columns">
 
@@ -52,12 +94,21 @@
                         </p>
                     </div>
                     <div class="card-content">
-                        Ik ben bijzonder creatief en kan mijn ideeën duidelijk uitleggen, daarnaast kan ik hiermee
-                        anderen
-                        ook motiveren en inspireren.
-                        <br> Ook ben ik leiding gevend ingesteld en kan ik goede planningen maken, Aansluitend kan ik ook goed
-                        comminuceren en team relaties sterk houden.
-                        <br> Verder ben ik erg vertrouwd over mijn kennis in Game Design en Game feel.
+                        <p>
+                            Ik ben bijzonder creatief en kan mijn ideeën duidelijk uitleggen, daarnaast kan ik hiermee
+                            anderen
+                            ook motiveren en inspireren.
+                        </p>
+                        <br>
+                        <p>
+                            Ook ben ik leiding gevend ingesteld en kan ik goede planningen maken, Aansluitend kan ik
+                            ook goed
+                            comminuceren en team relaties sterk houden.
+                        </p>
+                        <br>
+                        <p>
+                            Verder ben ik erg vertrouwd over mijn kennis in Game Design en Game feel.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -85,21 +136,7 @@
                 </div>
             </div>
 
-            <div class="column">
 
-                <div class="mijnDoel card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Mijn Doel!
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        Mijn doel is dat ik uiteindelijk een eigen bedrijf kan beginnen en mijn eigen opdrachtgever en Game Designer kan zijn,
-                        <br>Zodat ik mijn eigen ideeën en visie om kan zetten in games die ik maak.
-                    </div>
-                </div>
-
-            </div>
         </div>
 
         <!--///////////////////////PROJECTEN///////////////////////////////////////////////-->
@@ -109,7 +146,8 @@
 
         <div class="columns">
 
-            <div class="column project" id="isaac">     <!--ISAAC-->
+            <div class="column project" id="isaac">
+                <!--ISAAC-->
                 <div class="card isaac">
                     <div class="card-header">
                         <p class="card-header-title has-text-centered">
@@ -130,25 +168,28 @@
                         <section class="modal-card-body">
                             <p>
                                 bescrijving opdracht
-                            wie heeft er aan gewerkt
-                            Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                            Hoelang heb ik hier tijd voor gehad
-                            Dan de blog posts updates 
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
                                 Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
                                 <br>
                                 <br> Dit project is gemaakt in Unity met C#.
                             </p>
                         </section>
                         <footer class="modal-card-foot">
-                            <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/" target="_blank">Speel game</a>
-                            
-                            <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op Github</a>
+                            <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/"
+                                target="_blank">Speel game</a>
+
+                            <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op
+                                Github</a>
                         </footer>
                     </div>
                 </div>
             </div>
 
-            <div class="column project" id="dungeon">       <!--DUNGEON-->
+            <div class="column project" id="dungeon">
+                <!--DUNGEON-->
                 <div class="card dungeon">
                     <div class="card-header">
                         <p class="card-header-title has-text-centered">
@@ -169,10 +210,10 @@
                         <section class="modal-card-body">
                             <p>
                                 bescrijving opdracht
-                            wie heeft er aan gewerkt
-                            Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                            Hoelang heb ik hier tijd voor gehad
-                            Dan de blog posts updates 
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
                                 Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
 
                                 Dit is mijn eerste keuze deel opdracht van jaar 3, voor deze opdracht koos ik om een
@@ -183,16 +224,18 @@
                             </p>
                         </section>
                         <footer class="modal-card-foot">
-                            <a class="button" href="https://github.com/VolkenK/dungeonGenerator" target="_blank">Code op Github</a>
+                            <a class="button" href="https://github.com/VolkenK/dungeonGenerator" target="_blank">Code
+                                op Github</a>
                         </footer>
                     </div>
                 </div>
             </div>
-            <div class="column project" id="mythe">     <!--Mythe pukwudgie-->
+            <div class="column project" id="mythe">
+                <!--Mythe pukwudgie-->
                 <div class="card isaac">
                     <div class="card-header">
                         <p class="card-header-title has-text-centered">
-                                Mythe project: pukwudgie
+                            Mythe project: pukwudgie
                         </p>
                     </div>
                     <div class="card-content">
@@ -209,16 +252,16 @@
                         <section class="modal-card-body">
                             <p>
                                 bescrijving opdracht
-                            wie heeft er aan gewerkt
-                            Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                            Hoelang heb ik hier tijd voor gehad
-                            Dan de blog posts updates 
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
                                 Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
                             </p>
                         </section>
                         <footer class="modal-card-foot">
                             <a class="button" href="x" target="_blank">Speel game</a>
-                            
+
                             <a class="button" href="x" target="_blank">Code op Github</a>
                         </footer>
                     </div>
@@ -226,128 +269,267 @@
             </div>
         </div>
 
-        
-        
-        <div class="column project" id="mine">     <!--mine sweeper-->
-            <div class="card mine">
-                <div class="card-header">
-                    <p class="card-header-title has-text-centered">
-                        Mine sweeper
-                    </p>
-                </div>
-                <div class="card-content">
-                    <img id="mine_gif" src="x.jpg" alt="mine GIF" class="project_photo">
-                </div>
-            </div>
-            <div class="modal" id="mine_modal">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Mine sweeper game</p>
-                        <button class="delete"></button>
-                    </header>
-                    <section class="modal-card-body">
-                        <p>
-                            bescrijving opdracht
-                            wie heeft er aan gewerkt
-                            Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                            Hoelang heb ik hier tijd voor gehad
-                            Dan de blog posts updates 
-                                Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+        <div class="columns">
+
+            <div class="column project" id="mine">
+                <!--mine sweeper-->
+                <div class="card mine">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Mine sweeper
                         </p>
-                    </section>
-                    <footer class="modal-card-foot">
-                        <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/" target="_blank">Speel game</a>
-                        
-                        <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op Github</a>
-                    </footer>
+                    </div>
+                    <div class="card-content">
+                        <img id="mine_gif" src="x.jpg" alt="mine GIF" class="project_photo">
+                    </div>
+                </div>
+                <div class="modal" id="mine_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Mine sweeper game</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
+                                Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/"
+                                target="_blank">Speel game</a>
+
+                            <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op
+                                Github</a>
+                        </footer>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="column project" id="inventory">     <!--inventory system-->
-            <div class="card inventory">
-                <div class="card-header">
-                    <p class="card-header-title has-text-centered">
-                        Inventory system
-                    </p>
+
+            <div class="column project" id="inventory">
+                <!--inventory system-->
+                <div class="card inventory">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Inventory system
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        <img id="inventory_gif" src="inventorySytemV2.gif" alt="Inventory GIF" class="project_photo">
+                    </div>
                 </div>
-                <div class="card-content">
-                    <img id="inventory_gif" src="inventorySytemV2.gif" alt="Inventory GIF" class="project_photo">
-                </div>
-            </div>
-            <div class="modal" id="inventory_modal">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">inventory</p>
-                        <button class="delete"></button>
-                    </header>
-                    <section class="modal-card-body">
-                        <p>
-                            bescrijving opdracht
-                            wie heeft er aan gewerkt
-                            Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                            Hoelang heb ik hier tijd voor gehad
-                            Dan de blog posts updates 
+                <div class="modal" id="inventory_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">inventory</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
                                 Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
 
-                            Met deze opdracht heb ik geprobeerd om een herbruikbaar inventory system te maken voor andere projecten in Unity.
-                            voor deze opdracht had ik 2 weken de tijd<br><br>
-                            Aan het einde van de eerste week had ik ervoor gezorgd dat de speler items kon oppakken en in een list opslaan.<br>
-                            <img  src="inventoryA_v1.PNG" alt="foto a"><br>
-                            <img  src="inventoryB_v1.PNG" alt="foto b"><br>
-                            Daarna heb ik een poging gedaan tot het maken van een UI voor het menu.<br>
-                            
-                            Tot hier aan toe is het resultaat voor dit project als opdracht.<br>
-                            Maar ik breid deze opdracht later verder uit tot een volledig template.<br><br>
+                                Met deze opdracht heb ik geprobeerd om een herbruikbaar inventory system te maken voor
+                                andere projecten in Unity.
+                                voor deze opdracht had ik 2 weken de tijd<br><br>
+                                Aan het einde van de eerste week had ik ervoor gezorgd dat de speler items kon oppakken
+                                en in een list opslaan.<br>
+                                <img src="inventoryA_v1.PNG" alt="foto a"><br>
+                                <img src="inventoryB_v1.PNG" alt="foto b"><br>
+                                Daarna heb ik een poging gedaan tot het maken van een UI voor het menu.<br>
+
+                                Tot hier aan toe is het resultaat voor dit project als opdracht.<br>
+                                Maar ik breid deze opdracht later verder uit tot een volledig template.<br><br>
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot">
+
+                            <a class="button" href="https://github.com/VolkenK/inventorySystem" target="_blank">Code op
+                                Github</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column project" id="isaac">
+                <!--Template-->
+                <div class="card isaac">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            project name
                         </p>
-                    </section>
-                    <footer class="modal-card-foot">
-                        
-                        <a class="button" href="https://github.com/VolkenK/inventorySystem" target="_blank">Code op Github</a>
-                    </footer>
+                    </div>
+                    <div class="card-content">
+                        <img id="isaac_gif" src="x.jpg" alt="Isaac GIF" class="project_photo">
+                    </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="column project" id="isaac">     <!--Template-->
-            <div class="card isaac">
-                <div class="card-header">
-                    <p class="card-header-title has-text-centered">
-                        project name
-                    </p>
-                </div>
-                <div class="card-content">
-                    <img id="isaac_gif" src="x.jpg" alt="Isaac GIF" class="project_photo">
-                </div>
-            </div>
-            <div class="modal" id="isaac_modal">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Isaac</p>
-                        <button class="delete"></button>
-                    </header>
-                    <section class="modal-card-body">
-                        <p>
-                            bescrijving opdracht
-                            wie heeft er aan gewerkt
-                            Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                            Hoelang heb ik hier tijd voor gehad
-                            Dan de blog posts updates 
+                <div class="modal" id="isaac_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Isaac</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
                                 Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
-                        </p>
-                    </section>
-                    <footer class="modal-card-foot">
-                        <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/" target="_blank">Speel game</a>
-                        
-                        <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op Github</a>
-                    </footer>
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/"
+                                target="_blank">Speel game</a>
+
+                            <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op
+                                Github</a>
+                        </footer>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!--///////////////////////GAMES///////////////////////////////////////////////-->
+        <div class="card projecs_header" id="projects">
+            <h1 class="subtitle is-3 has-text-white has-text-centered">Games</h1>
+        </div>
+        <div class="columns">
+
+            <div class="column project" id="isaac">
+                <!--ISAAC-->
+                <div class="card isaac">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            GameSlice: The binding of isaac
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        <img id="isaac_gif" src="isaacGameSlice.gif" alt="Isaac GIF" class="project_photo">
+                    </div>
+                </div>
+                <div class="modal" id="isaac_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Isaac</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
+                                Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+                                <br>
+                                <br> Dit project is gemaakt in Unity met C#.
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <a class="button" href="http://22321.hosts.ma-cloud.nl/bewijzenmap/p2.2/IDP/IsaacGameSliceV4/"
+                                target="_blank">Speel game</a>
+
+                            <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op
+                                Github</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column project" id="dungeon">
+                <!--DUNGEON-->
+                <div class="card dungeon">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Dungeon
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        <img id="dungeonGenerator" src="dungeonGenerator.PNG" alt="dungeon PNG">
+                    </div>
+                </div>
+                <div class="modal" id="dungeon_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Dungeon</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
+                                Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+
+                                Dit is mijn eerste keuze deel opdracht van jaar 3, voor deze opdracht koos ik om een
+                                dungeon
+                                generation algoritme te
+                                maken. tijd: 2 weken, leden: aleen ik, wat gedaan: algoritme script (incompleet).
+                                <br> Dit project is gemaakt in Unity met C#.
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <a class="button" href="https://github.com/VolkenK/dungeonGenerator" target="_blank">Code
+                                op Github</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="column project" id="mythe">
+                <!--Mythe pukwudgie-->
+                <div class="card isaac">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Mythe project: pukwudgie
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        <img id="mythe_gif" src="x.jpg" alt="mythe GIF" class="project_photo">
+                    </div>
+                </div>
+                <div class="modal" id="mythe_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">mythe</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
+                                Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <a class="button" href="x" target="_blank">Speel game</a>
+
+                            <a class="button" href="x" target="_blank">Code op Github</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--/////////////////////////////FOOTER///////////////////////////////////////// -->
         <div class="card contact_header" id="contact">
             <h1 class="subtitle is-3 has-text-white has-text-centered">Contact</h1>
@@ -356,13 +538,13 @@
         <div class="card contactList">
             <div class="card-content">
                 <p>github:
-                    <a href="https://github.com/volkenK" target="__blank">VolkenK</a>
+                    <a href="https://github.com/volkenK" target="__blank" class="has-text-primary">VolkenK</a>
                 </p>
                 <p>linkedIn:
-                    <a href="https://www.linkedin.com/in/volken-koelewijn-861651151/" target="__blank">VolkenKoelewijn</a>
+                    <a href="https://www.linkedin.com/in/volken-koelewijn-861651151/" target="__blank" class="has-text-primary">VolkenKoelewijn</a>
                 </p>
                 <p>Gmail:
-                    <a href="mailto:volkenkoelewijn@gmail.com">VolkenKoelewijn(at)gmail(dot)com</a>
+                    <a href="mailto:volkenkoelewijn@gmail.com" class="has-text-primary">VolkenKoelewijn(at)gmail(dot)com</a>
                 </p>
             </div>
         </div>

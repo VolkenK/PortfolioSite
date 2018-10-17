@@ -21,17 +21,21 @@ addModal('mine');
 addModal('inventory');
 
 function addModal(identifier) {
+
     let object = document.querySelector(`#${identifier}`);
 
     object.querySelector('.card').addEventListener("click", () => {
+        document.querySelector('html').classList.add('enable-scroll');
         object.querySelector(`#${identifier}_modal`).classList.add('is-active');
     });
 
     object.querySelector('.modal').addEventListener("click", () => {
+        document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector('.modal').classList.remove('is-active');
     });
 
     object.querySelector('.delete').addEventListener("click", () => {
+        document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector('.modal').classList.remove('is-active');
     });
 
