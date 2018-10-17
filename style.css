@@ -110,7 +110,7 @@ nav {
 }
 
 .watLeren {
-  background-color: #3c413dee;
+  background-color: #4e524fee;
   color: #000000;
 }
 
@@ -129,7 +129,7 @@ nav {
 .modal {
   color: black;
 }
-
+/* /  / / / /  HIER JE PROJECTEN PLEUREN, DUMASS  /  / / /  */
 .isaac {
   background-color: #3c413dee;
   padding: 2px;
@@ -145,6 +145,33 @@ nav {
 }
 
 #dungeonGenerator {
+  width: 100%;
+}
+
+.mythe_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#mythe_gif {
+  width: 100%;
+}
+
+.mine_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#mine_gif {
+  width: 100%;
+}
+
+.inventory_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#inventory_gif {
   width: 100%;
 }
 

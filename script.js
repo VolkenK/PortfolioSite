@@ -16,6 +16,9 @@ function smoothScroll(ev) {
 
 addModal('dungeon');
 addModal('isaac');
+addModal('mythe');
+addModal('mine');
+addModal('inventory');
 
 function addModal(identifier) {
     let object = document.querySelector(`#${identifier}`);
