@@ -9,6 +9,11 @@ document.querySelector('#nav_project').addEventListener("click", () => smoothScr
 document.querySelector('#nav_games').addEventListener("click", () => smoothScroll(games));
 document.querySelector('#nav_contact').addEventListener("click", () => smoothScroll(contact));
 
+document.querySelector('#header_arrow').addEventListener("click", () => scrollTo({
+    top: header.clientHeight,
+    behavior: "smooth"
+}))
+
 function smoothScroll(ev) {
     console.log('ながさき');
     scrollTo({
@@ -28,10 +33,10 @@ function addModal(identifier) {
     let object = document.querySelector(`#${identifier}`);
 
     object.querySelector('.card').addEventListener("click", () => {
-        window.location.href = `${identifier}.html`;
+        // window.location.href = `${identifier}.html`;
 
-        // document.querySelector('html').classList.add('enable-scroll');
-        // object.querySelector(`#${identifier}_modal`).classList.add('is-active');
+        document.querySelector('html').classList.add('enable-scroll');
+        object.querySelector(`#${identifier}_modal`).classList.add('is-active');
     });
 
     object.querySelector('.modal').addEventListener("click", () => {

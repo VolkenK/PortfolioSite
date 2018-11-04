@@ -17,7 +17,7 @@ body {
 }
 
 #container {
-  padding: 2em 15px;
+  padding: 2em 15px 8em;
 }
 
 div {
@@ -28,7 +28,7 @@ nav {
   position: fixed;
   width: 100%;
   /* background-color: #314c80e7; */
-  background: #f2f2f2CF;
+  background: #f2f2f2EF;
   display: flex;
   z-index: 35;
   box-shadow: 0px 1px 8px #47464699;
@@ -42,6 +42,29 @@ nav {
   /* background-image: url('https://cdn.discordapp.com/attachments/380352131598778368/506839564451577868/leaves_1745970c.png'); */
   background-image: url('wallpaper.jpg');
   background-size: cover;
+}
+
+.header_arrow_wrapper {
+  position: absolute;
+  bottom: 10px;
+  font-size: 150%;
+  animation: hovering 1.2s infinite;
+}
+
+#header_arrow { 
+  cursor: pointer;
+}
+
+@keyframes hovering {
+  from {
+    bottom: 10px;
+  }
+  75% {
+    bottom: 20px;
+  }
+  to {
+    bottom: 10px;
+  }
 }
 
 .text-vertical-center {
@@ -60,6 +83,7 @@ nav {
 .subtitle {
   font-family: 'K2D', sans-serif;
   color: black!important;
+  font-weight: bold;
 }
 
 .link {
@@ -236,10 +260,15 @@ nav {
   padding: 2px;
 }
 
+.contactList a {
+  font-weight: bold;
+}
+
 /* Modal / popup */
 
 .modal-card {
-  max-height: calc(100vh - 200px);
+  margin: 20px;
+  width: auto;
 }
 
 /* .modal-card > * {
@@ -247,17 +276,18 @@ nav {
 } */
 
 
-.modal-card>.modal-card-head {
+/* .modal-card>.modal-card-head {
   background-color: rgb(142, 153, 247);
-}
+ } */
 
 .modal-card>.modal-card-body {
-  background-color: rgb(149, 185, 240);
+  color: white;
+  background-image: url('image-46448313-navy-blue-background.jpg');
 }
 
-.modal-card>.modal-card-foot {
+/* .modal-card>.modal-card-foot {
   background-color: rgb(142, 153, 247);
-}
+} */
 
 .enable-scroll {
   overflow-y: hidden;
