@@ -2,12 +2,18 @@ body {
   margin: 0 auto;
   text-align: middle;
   background-attachment: fixed;
-  background: linear-gradient(rgb(149, 185, 240), #f1d4f1);
-  background-size: contain;
+  /* background: linear-gradient(rgb(149, 185, 240), #f1d4f1); */
+  background: white;
+  background-image: url('image-46448313-navy-blue-background.jpg');
+    /* 'https://www.toptal.com/designers/subtlepatterns/patterns/gravel.png'); */
+    /* 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3119999.jpg'); */
+    /* 'https://us.123rf.com/450wm/zinako/zinako1708/zinako170800997/85402279-seamless-abstract-blue-pattern-with-simple-elegant-stripes-can-be-used-for-wallpaper-pattern-fills-g.jpg?ver=6'); */
+    /* 'https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg'); */
+  background-size: normal;
   background-position-x: 10em;
   animation: background-image linear 800s infinite forwards;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: black;
 }
 
 #container {
@@ -21,10 +27,11 @@ div {
 nav {
   position: fixed;
   width: 100%;
-  background-color: #314c80e7;
+  /* background-color: #314c80e7; */
+  background: #f2f2f2CF;
   display: flex;
   z-index: 35;
-  box-shadow: 0px 2px 11px black;
+  box-shadow: 0px 1px 8px #47464699;
 }
 
 .fullscreen-header {
@@ -32,7 +39,8 @@ nav {
   height: 100vh;
   width: 100%;
   background-color: cornflowerblue;
-  background-image: url('https://cdn.discordapp.com/attachments/502190794128752642/502234674442010654/bqnzecjp4rz01.jpg');
+  /* background-image: url('https://cdn.discordapp.com/attachments/380352131598778368/506839564451577868/leaves_1745970c.png'); */
+  background-image: url('wallpaper.jpg');
   background-size: cover;
 }
 
@@ -41,6 +49,8 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 3px 3px black;
 }
 .text-vertical-center > * {
   width: 100%;
@@ -49,6 +59,7 @@ nav {
 
 .subtitle {
   font-family: 'K2D', sans-serif;
+  color: black!important;
 }
 
 .link {
@@ -56,7 +67,7 @@ nav {
   float: left;
   flex-grow: 1;
   text-align: center;
-  color: white;
+  color: black;
   padding: 1em 0;
 }
 
@@ -75,9 +86,10 @@ nav {
 
 
 #container .card {
-  color: white !important;
+  color: black !important;
   /* margin: 2em 0 0; */
   height: 100%;
+  background-color: #fafafa !important;
 }
 
 #container>.card {
@@ -90,7 +102,7 @@ nav {
 
 
 .card-header-title {
-  color: white;
+  color: black;
 }
 
 .project>.card:hover {
