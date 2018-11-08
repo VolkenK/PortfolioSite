@@ -16,12 +16,29 @@ body {
   color: black;
 }
 
+.font-alt {
+  font-family: 'K2D', sans-serif;
+}
+
+.has-text-header {
+  color: #e66f4a;
+  font-weight: bold;
+}
+
 #container {
   padding: 2em 15px 8em;
 }
 
 div {
   display: block;
+}
+
+a {
+  color: #e66f4a;
+}
+
+.icon {
+  font-size: 350%;
 }
 
 nav {
@@ -39,9 +56,13 @@ nav {
   height: 100vh;
   width: 100%;
   background-color: cornflowerblue;
-  /* background-image: url('https://cdn.discordapp.com/attachments/380352131598778368/506839564451577868/leaves_1745970c.png'); */
-  background-image: url('wallpaper.jpg');
+  /* background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EvVhCC0deijtsl1b4/videoblocks-programming-code-background-abstract-seamless-loop-animation_bklmxmhjw_thumbnail-full01.png'); */
+  /* background-image: url('wallpaper.jpg'); */
+  background-image: url('https://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-38.jpg');
   background-size: cover;
+  /* background-blend-mode: darken; */
+  
+  background-position: center;
 }
 
 .header_arrow_wrapper {
@@ -73,7 +94,8 @@ nav {
   align-items: center;
   height: 100%;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 3px 3px black;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 3px 3px black; */
+  text-shadow: 4px 4px 4px black;
 }
 .text-vertical-center > * {
   width: 100%;

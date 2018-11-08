@@ -48,6 +48,11 @@ function addModal(identifier) {
         document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector('.modal').classList.remove('is-active');
     });
+    
+    object.querySelector('.close').addEventListener("click", () => {
+        document.querySelector('html').classList.remove('enable-scroll');
+        object.querySelector('.modal').classList.remove('is-active');
+    });
 
     object.querySelector('.modal-card').addEventListener("click", (event) => {
         event.stopPropagation();
