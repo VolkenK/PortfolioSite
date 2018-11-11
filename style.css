@@ -5,10 +5,10 @@ body {
   /* background: linear-gradient(rgb(149, 185, 240), #f1d4f1); */
   background: white;
   background-image: url('image-46448313-navy-blue-background.jpg');
-    /* 'https://www.toptal.com/designers/subtlepatterns/patterns/gravel.png'); */
-    /* 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3119999.jpg'); */
-    /* 'https://us.123rf.com/450wm/zinako/zinako1708/zinako170800997/85402279-seamless-abstract-blue-pattern-with-simple-elegant-stripes-can-be-used-for-wallpaper-pattern-fills-g.jpg?ver=6'); */
-    /* 'https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg'); */
+  /* 'https://www.toptal.com/designers/subtlepatterns/patterns/gravel.png'); */
+  /* 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3119999.jpg'); */
+  /* 'https://us.123rf.com/450wm/zinako/zinako1708/zinako170800997/85402279-seamless-abstract-blue-pattern-with-simple-elegant-stripes-can-be-used-for-wallpaper-pattern-fills-g.jpg?ver=6'); */
+  /* 'https://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg'); */
   background-size: normal;
   background-position-x: 10em;
   animation: background-image linear 800s infinite forwards;
@@ -58,10 +58,11 @@ nav {
   background-color: cornflowerblue;
   /* background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EvVhCC0deijtsl1b4/videoblocks-programming-code-background-abstract-seamless-loop-animation_bklmxmhjw_thumbnail-full01.png'); */
   /* background-image: url('wallpaper.jpg'); */
-  background-image: url('./code-wallpaper-38.jpg');
+  /* background-image: url('./code-wallpaper-38.jpg'); */
+  background-image: url('20181111_140228.jpg');
   background-size: cover;
-  /* background-blend-mode: darken; */
-  
+  background-blend-mode: multiply;
+
   background-position: center;
 }
 
@@ -72,7 +73,7 @@ nav {
   animation: hovering 1.2s infinite;
 }
 
-#header_arrow { 
+#header_arrow {
   cursor: pointer;
 }
 
@@ -80,9 +81,11 @@ nav {
   from {
     bottom: 10px;
   }
+
   75% {
     bottom: 20px;
   }
+
   to {
     bottom: 10px;
   }
@@ -97,14 +100,15 @@ nav {
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 3px 3px black; */
   text-shadow: 4px 4px 4px black;
 }
-.text-vertical-center > * {
+
+.text-vertical-center>* {
   width: 100%;
 }
 
 
 .subtitle {
   font-family: 'K2D', sans-serif;
-  color: black!important;
+  color: black !important;
   font-weight: bold;
 }
 
@@ -136,6 +140,7 @@ nav {
   /* margin: 2em 0 0; */
   height: 100%;
   background-color: #fafafa !important;
+  overflow: hidden;
 }
 
 #container>.card {
@@ -313,4 +318,14 @@ nav {
 
 .enable-scroll {
   overflow-y: hidden;
+}
+
+.project_label {
+  position: absolute;
+  transform: rotate(41deg);
+  background: #e66f4a !important;
+  width: 100%;
+  text-align: center;
+  top: 9%;
+  right: -34%;
 }
