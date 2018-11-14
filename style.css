@@ -221,6 +221,11 @@ nav {
   padding: 2px;
 }
 
+.ontwerp_header {
+  background-color: #681985e7;
+  padding: 2px;
+}
+
 .modal {
   color: black;
 }
@@ -239,12 +244,48 @@ nav {
   background-color: #3c413dee;
 }
 
-.dungeon {
+.ma100 {
   /* background-color: #3c413dee; */
   padding: 2px;
 }
 
-#dungeonGenerator {
+#ma100 {
+  width: 100%;
+}
+
+.labyrinth {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#labyrinth {
+  width: 100%;
+}
+
+.runner {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#runner {
+  width: 100%;
+}
+
+.siteGame {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#siteGame {
+  width: 100%;
+}
+
+.healthGun {
+  /* background-color: #3c413dee; */
+  padding: 2px;
+}
+
+#healthGun {
   width: 100%;
 }
 
@@ -257,12 +298,21 @@ nav {
   width: 100%;
 }
 
-.mine_gif {
+.mario_gif {
   background-color: #3c413dee;
   padding: 2px;
 }
 
-#mine_gif {
+#mario_gif {
+  width: 100%;
+}
+
+.hex_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#hex_gif {
   width: 100%;
 }
 
@@ -275,6 +325,41 @@ nav {
   width: 100%;
 }
 
+.labyrinth_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#labyrinth_gif {
+  width: 100%;
+}
+
+.runner_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#runner_gif {
+  width: 100%;
+}
+
+.siteGame_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#siteGame_gif {
+  width: 100%;
+}
+
+.healthGun_gif {
+  background-color: #3c413dee;
+  padding: 2px;
+}
+
+#healthGun_gif {
+  width: 100%;
+}
 /*////////////////////////////////////////////////////////////////////*/
 
 .contact_header {

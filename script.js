@@ -2,11 +2,13 @@ let profile = document.querySelector('#profile');
 let project = document.querySelector('#projects');
 let contact = document.querySelector('#contact');
 let games = document.querySelector('#games');
+let ontwerp = document.querySelector('#ontwerp');
 let header = document.querySelector('.fullscreen-header');
 
 document.querySelector('#nav_profile').addEventListener("click", () => smoothScroll(profile));
 document.querySelector('#nav_project').addEventListener("click", () => smoothScroll(project));
 document.querySelector('#nav_games').addEventListener("click", () => smoothScroll(games));
+document.querySelector('#nav_ontwerp').addEventListener("click", () => smoothScroll(ontwerp));
 document.querySelector('#nav_contact').addEventListener("click", () => smoothScroll(contact));
 
 document.querySelector('#header_arrow').addEventListener("click", () => scrollTo({
@@ -22,11 +24,18 @@ function smoothScroll(ev) {
     });
 }
 
-addModal('dungeon');
+addModal('ma100');
 addModal('isaac');
 addModal('mythe');
-addModal('mine');
+
+addModal('hex');
 addModal('inventory');
+addModal('mario');
+
+addModal('labyrinth');
+addModal('runner');
+addModal('siteGame');
+addModal('healthGun');
 
 function addModal(identifier) {
 
