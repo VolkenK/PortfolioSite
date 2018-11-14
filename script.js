@@ -24,8 +24,8 @@ function smoothScroll(ev) {
     });
 }
 
-addModal('ma100');
 addModal('isaac');
+addModal('ma100');
 addModal('mythe');
 
 addModal('hex');
@@ -42,8 +42,6 @@ function addModal(identifier) {
     let object = document.querySelector(`#${identifier}`);
 
     object.querySelector('.card').addEventListener("click", () => {
-        // window.location.href = `${identifier}.html`;
-
         document.querySelector('html').classList.add('enable-scroll');
         object.querySelector(`#${identifier}_modal`).classList.add('is-active');
     });
@@ -57,7 +55,7 @@ function addModal(identifier) {
         document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector('.modal').classList.remove('is-active');
     });
-    
+
     object.querySelector('.close').addEventListener("click", () => {
         document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector('.modal').classList.remove('is-active');
@@ -65,5 +63,16 @@ function addModal(identifier) {
 
     object.querySelector('.modal-card').addEventListener("click", (event) => {
         event.stopPropagation();
+    });
+
+    object.querySelector('.card .project_photo').addEventListener("click", (event) => {
+        event.stopPropagation();
+        document.querySelector('html').classList.add('enable-scroll');
+        object.querySelector(`#${identifier}_enlarged`).classList.add('is-active');
+    });
+    
+    object.querySelector('.modal-close').addEventListener("click", () => {
+        document.querySelector('html').classList.remove('enable-scroll');
+        object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
     });
 }

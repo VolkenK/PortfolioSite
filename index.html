@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <link rel="shortcut icon" href="x-icon.jpg" type="image/x-icon">
@@ -18,10 +20,10 @@
 
 <body>
     <nav>
+        <span class="link" id="nav_profile">Profiel</span>
         <span class="link" id="nav_games">Games</span>
         <span class="link" id="nav_project">Projecten</span>
         <span class="link" id="nav_ontwerp">Functioneel ontwerp</span>
-        <span class="link" id="nav_profile">Profiel</span>
         <span class="link" id="nav_contact">Contact</span>
     </nav>
 
@@ -37,10 +39,115 @@
         </div>
     </header>
 
-    <br>
-
     <div id="container" class="container">
 
+
+        <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
+
+        <div class="profile_header card" id="profile">
+            <h1 class="subtitle is-3 has-text-centered">Profiel</h1>
+        </div>
+
+        <div class="columns">
+
+            <div class="column is-one-third-desktop">
+                <div class="card aboutMe">
+                    <div class="card-content aboutMeContent">
+                        <img src="v.jpg" id="selfie">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="mijnTalenten card">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Over mij.
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        Mijn naam is Volken Koelewijn,<br> ik ben geboren op 13 September 1999.
+                        Ik woon in Uithoorn en ik volg momenteel een opleiding voor Game Developer op het Mediacollege
+                        Amsterdam. <br><br>
+                        Ik ben vrolijk en ik heb een goed gevoel voor humor.
+                        Ik speel en verzamel video games en praat er ook veel over.
+                        Verder teken ik ook graag.
+                        Inspiratie voor game concepten haal ik vaak uit vergezochte of onbenullige dingen die mij aan
+                        het denken zetten;
+                        als ik dit soort inspiratie heb werk ik ze uit door ze op papier te tekenen.
+                        Ik programmeer in unity.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="mijnDoel card">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Mijn Doel!
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        Mijn doel is dat ik instaat ben om mijn game concepten te kunnen verwezenlijken als werk. <br>
+                        Game concepten uitdenken en op papier zetten.<br>
+                        Een demo van die game programmeren<br>
+                        Het game concept verder uitwerken<br>
+                        Een team leiden om die game te maken
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+
+            <div class="column">
+                <div class="mijnTalenten card">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Mijn talenten
+                        </p>
+                    </div>
+                    <div class="card-content">
+
+                        <ul>
+                            <li>- Creatief</li>
+                            <li>- Veel kennis over game design</li>
+                            <li>- Veel kennis over game feel</li>
+                            <li>- Instaat om game genres te mengen zonder dat de game feel daar onder leidt</li>
+                            <li>- Goed comminuceren</li>
+                            <li>- Leiding gevend ingesteld</li>
+                            <li>- Planningen maken</li>
+                            <li>- Kan motiveren en inspireren</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="watLeren card">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            Wat wil ik leren
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        <p>
+                            Voor dit stadium in mijn opleiding wil ik graag leren hoe game design en prototyping er aan
+                            toe gaat
+                            bij game bedrijven zelf.
+                            <br><br>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <!--///////////////////////GAMES///////////////////////////////////////////////-->
         <div class="card projecs_header" id="games">
@@ -57,9 +164,10 @@
                         </p>
                     </div>
                     <div class="card-content">
-                        <img id="isaac_gif" src="isaac.PNG" alt="Isaac vid" class="project_photo">
-                        
-                        <button class="button is-fullwidth">Meer informatie <br>Project manager en programmeur,<br> 4 weken tijd.</button>
+                        <!-- <img src="isaac.PNG" alt="Isaac vid" class="project_photo"> -->
+                        <video id="isaac_gif" autoplay src="isaacVid.mp4" class="project_photo"></video>
+                        <button class="button is-fullwidth">Meer informatie </button>
+                        <p>Project manager en programmeur,<br> 4 weken tijd.</p>
                     </div>
                 </div>
                 <div class="modal" id="isaac_modal">
@@ -72,7 +180,7 @@
                         <section class="modal-card-body">
                             <p>
                                 Dit project is een gameslice van the binding of isaac.<br>
-                                 Dat houd in dat er 10 seconden gameplay van deze game zijn nagemaakt.<br>
+                                Dat houd in dat er 10 seconden gameplay van deze game zijn nagemaakt.<br>
                                 Aan deze game heb ik met twee andere programmeurs gewerkt en met drie artists.<br>
                                 Ik heb in dit project de player movement, shooting en bullet scripts gemaakt. <br>
                                 Verder heb ik het project gemanaged en de taken verdeeld.<br>
@@ -90,6 +198,14 @@
                         </footer>
                     </div>
                 </div>
+                <!-- Foto stukje -->
+                <div class="modal" id="isaac_enlarged">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                            <video id="isaac_gif" autoplay src="isaacVid.mp4"></video>
+                    </div>
+                    <button class="modal-close is-large" aria-label="close"></button>
+                </div>
             </div>
 
             <div class="column project" id="ma100">
@@ -102,7 +218,8 @@
                     </div>
                     <div class="card-content">
                         <img id="ma100" src="ma100.PNG" alt="ma100 PNG">
-                        <button class="button is-fullwidth">Meer informatie <br> Designer, programmeur en manager,<br> 6 weken tijd.</button>
+                        <button class="button is-fullwidth">Meer informatie </button>
+                        <p>Designer, programmeur en manager,<br> 6 weken tijd.</p>
                     </div>
                 </div>
                 <div class="modal" id="ma100_modal">
@@ -140,7 +257,8 @@
                     </div>
                     <div class="card-content">
                         <img id="mythe_gif" src="mythe.PNG" alt="mythe GIF" class="project_photo">
-                        <button class="button is-fullwidth">Meer informatie<br>Designer project manager en programmeur, <br>8 weken tijd.</button>
+                        <button class="button is-fullwidth">Meer informatie</button>
+                        <p>Designer project manager en programmeur, <br>8 weken tijd.</p>
                     </div>
                 </div>
                 <div class="modal" id="mythe_modal">
@@ -155,13 +273,14 @@
                                 Dit is een spel dat over de Pukwudgies gaat, mythische wezens uit indianen legendes.<br>
                                 Ook aan deze game heb ik gewerkt met twee andere programmeurs en drie game artists<br>
                                 In dit project heb ik de gameplay en level design ontworpen.<br>
-                                Ook heb ik in dit project aan de player movement, jumping en grab/throw scripts gewerkt.<br>
-                                 Verder heb ik ook aan de button, gate en  bouncer scripts gewerkt.<br>
+                                Ook heb ik in dit project aan de player movement, jumping en grab/throw scripts
+                                gewerkt.<br>
+                                Verder heb ik ook aan de button, gate en bouncer scripts gewerkt.<br>
                                 Verder heb ik het project gemanaged en de taken verdeeld.<br>
                                 Met dit project zijn wij 8 weken bezig geweest.<br>
                                 Ontwerp schetsen voor level design staan hieronder.<br>
                                 gemakt in unity
-                                
+
                             </p>
                         </section>
                         <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
@@ -173,7 +292,6 @@
                 </div>
             </div>
         </div>
-
 
         <!--///////////////////////PROJECTEN///////////////////////////////////////////////-->
         <div class="card projecs_header" id="projects">
@@ -216,8 +334,7 @@
                             </p>
                         </section>
                         <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
-                            <a class="button" href="x"
-                                target="_blank">Speel game</a>
+                            <a class="button" href="x" target="_blank">Speel game</a>
                             <a class="button" href="x" target="_blank">Code op
                                 Github</a>
                         </footer>
@@ -262,7 +379,7 @@
                     </div>
                 </div>
             </div>
-           
+
 
             <div class="column project" id="inventory">
                 <!--inventory system-->
@@ -315,13 +432,14 @@
                     </div>
                 </div>
             </div>
-
-<br>
+        </div>
+        <br>
         <!--///////////////////////Functioneel ontwerp///////////////////////////////////////////////-->
         <div class="card ontwerp_header" id="ontwerp">
             <h1 class="subtitle is-3 has-text-white has-text-centered">Functioneel ontwerp</h1>
         </div>
 
+        <div class="columns">
             <div class="column project" id="labyrinth">
                 <div class="card labyrinth">
                     <div class="card-header">
@@ -358,232 +476,123 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="column project" id="runner">
-            <div class="card runner">
-                <div class="card-header">
-                    <p class="card-header-title has-text-centered">
-                        runner
-                    </p>
-                </div>
-                <div class="card-content">
-                    <img id="runner_gif" src="x.jpg" alt="Isaac GIF" class="project_photo">
-                    <p class="has-text-grey-dark">
-                        Dit is een beschrijving van de isaac project.
-                    </p>
-                </div>
-            </div>
-            <div class="modal" id="runner_modal">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">runner</p>
-                        <button class="delete"></button>
-                    </header>
-                    <section class="modal-card-body">
-                        <p>
-                            bescrijving opdracht
-                            wie heeft er aan gewerkt
-                            Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                            Hoelang heb ik hier tijd voor gehad
-                            Dan de blog posts updates
-                            Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+            <div class="column project" id="runner">
+                <div class="card runner">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            runner
                         </p>
-                    </section>
-                    <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
+                    </div>
+                    <div class="card-content">
+                        <img id="runner_gif" src="x.jpg" alt="Isaac GIF" class="project_photo">
+                        <p class="has-text-grey-dark">
+                            Dit is een beschrijving van de isaac project.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal" id="runner_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">runner</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
+                                Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
 
-                        <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op
-                            Github</a>
-                    </footer>
+                            <a class="button" href="https://github.com/VolkenK/IsaacMyScripts" target="_blank">Code op
+                                Github</a>
+                        </footer>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="column project" id="siteGame">
-        <div class="card siteGame">
-            <div class="card-header">
-                <p class="card-header-title has-text-centered">
-                    siteGame
-                </p>
+            <div class="column project" id="siteGame">
+                <div class="card siteGame">
+                    <div class="card-header">
+                        <p class="card-header-title has-text-centered">
+                            siteGame
+                        </p>
+                    </div>
+                    <div class="card-content">
+                        <img id="siteGame_gif" src="x.jpg" alt="Isaac GIF" class="project_photo">
+                        <p class="has-text-grey-dark">
+                            Dit is een beschrijving van de isaac project.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal" id="siteGame_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">siteGame</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
+                                Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
+                        </footer>
+                    </div>
+                </div>
             </div>
-            <div class="card-content">
-                <img id="siteGame_gif" src="x.jpg" alt="Isaac GIF" class="project_photo">
-                <p class="has-text-grey-dark">
-                    Dit is een beschrijving van de isaac project.
-                </p>
-            </div>
-        </div>
-        <div class="modal" id="siteGame_modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">siteGame</p>
-                    <button class="delete"></button>
-                </header>
-                <section class="modal-card-body">
-                    <p>
-                        bescrijving opdracht
-                        wie heeft er aan gewerkt
-                        Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                        Hoelang heb ik hier tijd voor gehad
-                        Dan de blog posts updates
-                        Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
-                    </p>
-                </section>
-                <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
-                </footer>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="column project" id="healthGun">
-    <div class="card healthGun">
-        <div class="card-header">
-            <p class="card-header-title has-text-centered">
-                healthGun
-            </p>
-        </div>
-        <div class="card-content">
-            <img id="healthGun_gif" src="x.jpg" alt="Isaac GIF" class="project_photo">
-            <p class="has-text-grey-dark">
-                Dit is een beschrijving van de isaac project.
-            </p>
-        </div>
-    </div>
-    <div class="modal" id="healthGun_modal">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <header class="modal-card-head">
-                <p class="modal-card-title">healthGun</p>
-                <button class="delete"></button>
-            </header>
-            <section class="modal-card-body">
-                <p>
-                    bescrijving opdracht
-                    wie heeft er aan gewerkt
-                    Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
-                    Hoelang heb ik hier tijd voor gehad
-                    Dan de blog posts updates
-                    Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
-                </p>
-            </section>
-            <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
-            </footer>
-        </div>
-    </div>
-</div>
-</div>
-
-        <!--///////////////////////////ABOUT ME///////////////////////////////////////////-->
-
-        <div class="profile_header card" id="profile">
-            <h1 class="subtitle is-3 has-text-centered">Profiel</h1>
         </div>
 
         <div class="columns">
-
-            <div class="column is-one-third-desktop">
-                <div class="card aboutMe">
-                    <div class="card-content aboutMeContent">
-                        <img src="v.jpg" id="selfie">
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="mijnTalenten card">
+            <div class="column project is-4 is-offset-4" id="healthGun">
+                <div class="card healthGun">
                     <div class="card-header">
                         <p class="card-header-title has-text-centered">
-                            Over mij.
+                            healthGun
                         </p>
                     </div>
                     <div class="card-content">
-                        Mijn naam is Volken Koelewijn,<br> ik ben geboren op 13 September 1999. 
-                        Ik woon in Uithoorn en ik volg momenteel een opleiding voor Game Developer op het Mediacollege Amsterdam.  <br><br>
-                        Ik ben vrolijk en ik heb een goed gevoel voor humor.
-                        Ik speel en verzamel video games en praat er ook veel over.
-                        Verder teken ik ook graag.
-                        Inspiratie voor game concepten haal ik vaak uit vergezochte of onbenullige dingen die mij aan het denken zetten;
-                        als ik dit soort inspiratie heb werk ik ze uit door ze op papier te tekenen.  
-                        Ik programmeer in unity.
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="mijnDoel card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Mijn Doel!
+                        <img id="healthGun_gif" src="x.jpg" alt="Isaac GIF" class="project_photo">
+                        <p class="has-text-grey-dark">
+                            Dit is een beschrijving van de isaac project.
                         </p>
                     </div>
-                    <div class="card-content">
-                        Mijn doel is dat ik instaat ben om mijn game concepten te kunnen verwezenlijken als werk. <br>
-                        Game concepten uitdenken en op papier zetten.<br>
-                        Een demo van die game programmeren<br>
-                        Het game concept verder uitwerken<br>
-                        Een team leiden om die game te maken
-
+                </div>
+                <div class="modal" id="healthGun_modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">healthGun</p>
+                            <button class="delete"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                bescrijving opdracht
+                                wie heeft er aan gewerkt
+                                Wat is mijn aandeel (met daarin linkjes naar specifieke scripts waar ik het over heb).
+                                Hoelang heb ik hier tijd voor gehad
+                                Dan de blog posts updates
+                                Voor deze opdracht heb ik met een team van 3 game devs en 3 game artists gewerkt<br><br>
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot"> <button class="close button">Sluiten</button>
+                        </footer>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-        <div class="columns">
-
-            <div class="column">
-                <div class="mijnTalenten card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Mijn talenten
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        
-                        <ul>
-                            <li>- Creatief</li>
-                            <li>- Veel kennis over game design</li>
-                            <li>- Veel kennis over game feel</li>
-                            <li>- Instaat om game genres te mengen zonder dat de game feel daar     onder leidt</li>
-                            <li>- Goed comminuceren</li>
-                            <li>- Leiding gevend ingesteld</li>
-                            <li>- Planningen maken</li>
-                            <li>- Kan motiveren en inspireren</li>
-                        </ul>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="watLeren card">
-                    <div class="card-header">
-                        <p class="card-header-title has-text-centered">
-                            Wat wil ik leren
-                        </p>
-                    </div>
-                    <div class="card-content">
-                        <p>
-                            Voor dit stadium in mijn opleiding wil ik graag leren hoe game design en prototyping er aan toe gaat
-                            bij game bedrijven zelf.
-                            <br><br>
-                                
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
 
         <!--/////////////////////////////FOOTER///////////////////////////////////////// -->
         <div class="card contact_header" id="contact">

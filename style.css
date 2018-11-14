@@ -285,10 +285,6 @@ nav {
   padding: 2px;
 }
 
-#healthGun {
-  width: 100%;
-}
-
 .mythe_gif {
   background-color: #3c413dee;
   padding: 2px;
@@ -380,7 +376,7 @@ nav {
 
 .modal-card {
   margin: 20px;
-  width: auto;
+  width: 80%;
 }
 
 /* .modal-card > * {
