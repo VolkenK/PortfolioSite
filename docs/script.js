@@ -25,17 +25,17 @@ function smoothScroll(ev) {
 }
 
 addModal('isaac');
-addModal('ma100');
-addModal('mythe');
+// addModal('ma100');
+// addModal('mythe');
 
-addModal('hex');
-addModal('inventory');
-addModal('mario');
+// addModal('hex');
+// addModal('inventory');
+// addModal('mario');
 
-addModal('labyrinth');
-addModal('runner');
-addModal('siteGame');
-addModal('healthGun');
+// addModal('labyrinth');
+// addModal('runner');
+// addModal('siteGame');
+// addModal('healthGun');
 
 function addModal(identifier) {
 
@@ -65,14 +65,14 @@ function addModal(identifier) {
         event.stopPropagation();
     });
 
-    /*object.querySelector('.card .project_photo').addEventListener("click", (event) => {
+    object.querySelector('.card .project_photo').addEventListener("click", (event) => {
         event.stopPropagation();
         document.querySelector('html').classList.add('enable-scroll');
         object.querySelector(`#${identifier}_enlarged`).classList.add('is-active');
-    }); */
+    }); 
     
-    /*object.querySelector('.modal-close').addEventListener("click", () => {
+    object.querySelector('.modal-close').addEventListener("click", () => {
         document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
-    }); */
+    }); 
 }
