@@ -25,17 +25,17 @@ function smoothScroll(ev) {
 }
 
 addModal('isaac');
-// addModal('ma100');
-// addModal('mythe');
+addModal('ma100');
+addModal('mythe');
 
-// addModal('hex');
-// addModal('inventory');
-// addModal('mario');
+addModal('hex');
+addModal('inventory');
+addModal('mario');
 
-// addModal('labyrinth');
-// addModal('runner');
-// addModal('siteGame');
-// addModal('healthGun');
+addModal('labyrinth');
+addModal('runner');
+addModal('siteGame');
+addModal('healthGun');
 
 function addModal(identifier) {
 
