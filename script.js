@@ -65,14 +65,14 @@ function addModal(identifier) {
         event.stopPropagation();
     });
 
-    object.querySelector('.card .project_photo').addEventListener("click", (event) => {
+    /*object.querySelector('.card .project_photo').addEventListener("click", (event) => {
         event.stopPropagation();
         document.querySelector('html').classList.add('enable-scroll');
         object.querySelector(`#${identifier}_enlarged`).classList.add('is-active');
-    });
+    }); */
     
-    object.querySelector('.modal-close').addEventListener("click", () => {
+    /*object.querySelector('.modal-close').addEventListener("click", () => {
         document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
-    });
+    }); */
 }
