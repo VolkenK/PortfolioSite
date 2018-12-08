@@ -7,7 +7,7 @@ let header = document.querySelector('.fullscreen-header');
 
 document.querySelector('#nav_profile').addEventListener("click", () => smoothScroll(profile));
 document.querySelector('#nav_project').addEventListener("click", () => smoothScroll(project));
-document.querySelector('#nav_games').addEventListener("click", () => smoothScroll(games));
+// document.querySelector('#nav_games').addEventListener("click", () => smoothScroll(games));
 document.querySelector('#nav_ontwerp').addEventListener("click", () => smoothScroll(ontwerp));
 document.querySelector('#nav_contact').addEventListener("click", () => smoothScroll(contact));
 
@@ -25,17 +25,17 @@ function smoothScroll(ev) {
 }
 
 addModal('isaac');
-// addModal('ma100');
-// addModal('mythe');
+addModal('ma100');
+addModal('mythe');
 
-// addModal('hex');
-// addModal('inventory');
-// addModal('mario');
+addModal('hex');
+addModal('mario');
+addModal('inventory');
 
-// addModal('labyrinth');
-// addModal('runner');
-// addModal('siteGame');
-// addModal('healthGun');
+addModal('labyrinth');
+addModal('runner');
+addModal('siteGame');
+addModal('healthGun');
 
 function addModal(identifier) {
 
@@ -69,10 +69,15 @@ function addModal(identifier) {
         event.stopPropagation();
         document.querySelector('html').classList.add('enable-scroll');
         object.querySelector(`#${identifier}_enlarged`).classList.add('is-active');
-    }); 
-    
+    });
+
     object.querySelector('.modal-close').addEventListener("click", () => {
         document.querySelector('html').classList.remove('enable-scroll');
         object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
-    }); 
+    });
+
+    object.querySelector('.photo > .modal-background').addEventListener("click", () => {
+        document.querySelector('html').classList.remove('enable-scroll');
+        object.querySelector(`#${identifier}_enlarged`).classList.remove('is-active');
+    });
 }
