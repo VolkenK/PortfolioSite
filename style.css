@@ -4,7 +4,7 @@ body {
   background-attachment: fixed;
   /* background: linear-gradient(rgb(149, 185, 240), #f1d4f1); */
   background: white;
-  background-image: url('image-46448313-navy-blue-background.jpg');
+  background-image: url('andere foto/image-46448313-navy-blue-background.jpg');
   /* 'https://www.toptal.com/designers/subtlepatterns/patterns/gravel.png'); */
   /* 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3119999.jpg'); */
   /* 'https://us.123rf.com/450wm/zinako/zinako1708/zinako170800997/85402279-seamless-abstract-blue-pattern-with-simple-elegant-stripes-can-be-used-for-wallpaper-pattern-fills-g.jpg?ver=6'); */
@@ -59,7 +59,7 @@ nav {
   /* background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EvVhCC0deijtsl1b4/videoblocks-programming-code-background-abstract-seamless-loop-animation_bklmxmhjw_thumbnail-full01.png'); */
   /* background-image: url('wallpaper.jpg'); */
   /* background-image: url('./code-wallpaper-38.jpg'); */
-  background-image: url('20181111_140228.jpg');
+  background-image: url('andere foto/20181111_140228.jpg');
   background-size: cover;
   background-blend-mode: multiply;
 
@@ -380,6 +380,14 @@ nav {
   width: 80%;
 }
 
+.modal-card-head {
+  border-radius: 0;
+}
+
+.modal-card-foot {
+  border-radius: 0;
+}
+
 /* .modal-card > * {
   background-color: rgb(149, 185, 240);
 } */
@@ -391,7 +399,28 @@ nav {
 
 .modal-card>.modal-card-body {
   color: white;
-  background-image: url('image-46448313-navy-blue-background.jpg');
+  background-image: url('andere foto/image-46448313-navy-blue-background.jpg');
+}
+
+.modal-card-body .columns {
+  margin: 0 auto !important;
+}
+
+.modal-card-body .columns .card {
+  margin: 1em;
+}
+
+.button {
+  background-color: lightblue;
+}
+
+.carousel {
+  margin-bottom: 1em !important;
+}
+
+.imageWrapper.project_photo {
+
+  border: 1px solid #879396;
 }
 
 /* .modal-card>.modal-card-foot {
@@ -413,6 +442,11 @@ nav {
 }
 
 @media screen and (min-width: 769px) {
+
+  .modal-card-body>* {
+    width: 75%;
+    margin: 0 auto;
+  }
 
   print .modal-card,
   .modal-content {
